@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 import { Autoplay } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useMovie } from "../hooks/useMovie";
+import { useMovie } from "../hooks/UseMovie";
 import forrest from "../icons/forrest.jpg";
 import godfather from "../icons/godfather.jpg";
 import braveHeart from "../icons/Braveheart,.jpg";
@@ -51,10 +51,10 @@ function HeaderSlide() {
           className="  rounded-xl"
         >
           {movie.map((movie) => (
-            <SwiperSlide>
+            <SwiperSlide key={movie.id}>
               <div
                 className=" bg-silk aspect-[3] relative rounded-2xl"
-                key={movie.id}
+                
               >
                 <img
                   src={movie.img}
@@ -62,8 +62,8 @@ function HeaderSlide() {
                   className="w-full  h-96 rounded-2xl"
                 />
                 <div className="rounded-2xl p-4  flex  flex-col justify-end absolute bottom-0 w-full h-full bg-gradient-to-b from-Bistre/10  to-Bistre/95 ">
-                  <p className="text-silk text-md p-6 pb-2">{movie.name}</p>
-                  <p className="text-silk text-2xl p-10 pt-0 ">{movie.text}</p>
+                  <p className="text-silk md:text-base  p-6 pb-2">{movie.name}</p>
+                  <p className="text-silk md:text-2xl text-xl p-10 pt-0 ">{movie.text}</p>
                 </div>
               </div>
             </SwiperSlide>

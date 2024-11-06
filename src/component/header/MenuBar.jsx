@@ -24,21 +24,24 @@ function MenuBar() {
       <div className=" relative ">
         <div
           className={`${
-            isOpen ? " block   " : "hidden  "
-          } absolute z-10  right-0 w-64  `}
+            isOpen ? " block   " : " hidden  "
+          } absolute z-20  right-0 w-64  `}
         >
-          <ul className="bg-Bistre/90   text-silk flex flex-col gap-8 border-t-2 border-t-judge p-9  text-xl  h-screen  ">
+          <ul className="bg-Bistre opacity-90  text-silk flex flex-col gap-8 border-t-2 border-t-judge p-9  text-xl  h-screen  ">
             <NavLink to={"/Movies"}>
-              <a href="">Movies</a>
+              <p >Movies</p>
             </NavLink>
             <NavLink to={"TVshow"}>
-              <a href="">TV Shows</a>
+              <p >TV Shows</p>
+            </NavLink>
+            <NavLink to={"Person"}>
+              <p >People</p>
+            </NavLink>
+            <NavLink to={"Fav"}>
+              <p>Favorites</p>
             </NavLink>
             <li>
-              <a href="">People</a>
-            </li>
-            <li>
-              <a href="">Login</a>
+              <p >Login</p>
             </li>
           </ul>
         </div>

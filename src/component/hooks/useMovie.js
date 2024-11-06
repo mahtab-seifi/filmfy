@@ -1,21 +1,23 @@
 import { useEffect, useState } from "react";
 import { Services } from "../config/Services";
 
-
-export function useMovie( endpoint) {
+export function useMovie(endpoint) {
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [loading,setLoading]=useState(true)
 
   async function LoadDetail() {
-    
-      if (!loading) setLoading(true);
+     
+    try {
       const result = await Services.get(endpoint);
       setData(result.data);
-      setLoading(false);
-   
+      setLoading(false)
+    } catch (error) {
+      setError(error);
+    }
   }
   useEffect(() => {
     LoadDetail();
   }, [endpoint]);
-  return [data, loading]  ;
+  return [data, error,loading];
 }
