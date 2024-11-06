@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/filmfy/static/css/main.025da489.css",
+    "main.js": "/filmfy/static/js/main.0e1c6c00.js",
+    "static/js/453.0f96fa49.chunk.js": "/filmfy/static/js/453.0f96fa49.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/filmfy/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/filmfy/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/forrest.jpg": "/filmfy/static/media/forrest.8d68bdfb5997222594da.jpg",
+    "static/media/Braveheart,.jpg": "/filmfy/static/media/Braveheart,.fabfbd149088ba830230.jpg",
+    "static/media/thehelp.jpg": "/filmfy/static/media/thehelp.a596a4e5d5cfc4a42afd.jpg",
+    "static/media/godfather.jpg": "/filmfy/static/media/godfather.3e5db58c886a1bd5f2fc.jpg",
+    "index.html": "/filmfy/index.html",
+    "main.025da489.css.map": "/filmfy/static/css/main.025da489.css.map",
+    "main.0e1c6c00.js.map": "/filmfy/static/js/main.0e1c6c00.js.map",
+    "453.0f96fa49.chunk.js.map": "/filmfy/static/js/453.0f96fa49.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.025da489.css",
+    "static/js/main.0e1c6c00.js"
+  ]
+}
